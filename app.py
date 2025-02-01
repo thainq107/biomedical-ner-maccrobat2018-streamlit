@@ -1,4 +1,4 @@
-dimport streamlit as st
+import streamlit as st
 from transformers import pipeline
 
 classifier = pipeline(
