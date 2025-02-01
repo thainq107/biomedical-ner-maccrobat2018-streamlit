@@ -9,7 +9,7 @@ classifier = pipeline(
 
 def main():
     st.title('Biomedical NER')
-    st.title('Model: DistilBERT. Dataset: MACCROBAT2018')
+    st.subtitle('Model: DistilBERT. Dataset: MACCROBAT2018')
     sentence = """A 48 year - old female presented with vaginal bleeding and abnormal Pap smears .
       Upon diagnosis of invasive non - keratinizing SCC of the cervix ,
       she underwent a radical hysterectomy with salpingo - oophorectomy
