@@ -1,4 +1,4 @@
-import streamlit as st
+dimport streamlit as st
 from transformers import pipeline
 
 classifier = pipeline(
@@ -9,7 +9,7 @@ classifier = pipeline(
 
 def main():
     st.title('Biomedical NER')
-    st.subtitle('Model: DistilBERT. Dataset: MACCROBAT2018')
+    st.header('Model: DistilBERT. Dataset: MACCROBAT2018')
     sentence = """A 48 year - old female presented with vaginal bleeding and abnormal Pap smears .
       Upon diagnosis of invasive non - keratinizing SCC of the cervix ,
       she underwent a radical hysterectomy with salpingo - oophorectomy
