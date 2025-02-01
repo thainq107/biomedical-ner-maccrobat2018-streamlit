@@ -18,6 +18,7 @@ def main():
       """
     text_input = st.text_input("Sentence: ", sentence)
     results = classifier(text_input)
+    st.wrire(sentence)
     st.success(st.json(results))
 
 if __name__ == '__main__':
