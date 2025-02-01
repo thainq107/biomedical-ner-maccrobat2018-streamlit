@@ -3,7 +3,8 @@ from transformers import pipeline
 
 classifier = pipeline(
     "token-classification",
-    model="thainq107/ner-biomedical-maccrobat2018"
+    model="thainq107/ner-biomedical-maccrobat2018",
+    aggregation_strategy="simple"
 )
 
 def main():
@@ -16,7 +17,7 @@ def main():
   Pathological examination revealed that the tumour also extensively involved the lower uterine segment .
   """
   text_input = st.text_input("Sentence: ", sentence)
-  result = classifier(text_input)
+  results = classifier(text_input)
   for result in results:
       entity = result["entity_group"]
       word = result["word"]
